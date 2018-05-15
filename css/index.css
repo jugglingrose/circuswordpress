@@ -111,11 +111,18 @@ nav.navbar.navbar-inverse{
   letter-spacing: 1px;
   }
 
-  ul.nav.navbar-nav li a{
+  #menu-main li a{
   color: #ffffff;
   font-size: 22px;
   letter-spacing: 1px;
+
   }
+
+  /*ul.nav.navbar-nav li a{
+  color: #ffffff;
+  font-size: 22px;
+  letter-spacing: 1px;
+  }*/
 
   .active{
     color: #000000 !important;
@@ -125,7 +132,8 @@ nav.navbar.navbar-inverse{
 /* LANDING */
 
 #landing{
-  background: url("sixhulahoop.jpg") no-repeat center;
+  background: url("http://localhost/circuscg/wp-content/themes/circusred/assets/sixhulahoop.jpg");
+  background: no-repeat center;
   background-size: cover;
   height: 100vh;
 }
@@ -383,7 +391,7 @@ row:after {
 @media screen and (min-width: 480px){
 
   /*NAV*/
-  ul.nav.navbar-nav{
+#menu-main{
     float: right;
   }
 

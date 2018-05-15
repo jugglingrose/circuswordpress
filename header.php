@@ -22,7 +22,7 @@
     <?php wp_head(); ?>
   </head>
 
-  <body>
+  <body <?php body_class(); ?> >
 
   </header>
     <nav id="navb" class="navbar navbar-inverse navbar-fixed-top redNav">
@@ -35,13 +35,20 @@
           </button>
           <a class="navbar-brand" id="brand" href="#">COREAN GONZALES</a>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li><a href="../index.html#about">ABOUT</a></li>
-            <li><a href="../media">MEDIA</a></li>
-            <li><a href="services" class="active">SERVICES</a></li>
-            <li><a href="../blog">BLOG</a></li>
-            <li><a href="../index.html#contact">CONTACT</a></li>
+        <!--<div class="collapse navbar-collapse" id="myNavbar">-->
+
+            <?php wp_nav_menu( array(
+                'menu' => 'main',
+                'theme_location' => 'my_main_menu',
+                'depth'	=> 2, // 1 = no dropdowns, 2 = with dropdowns.
+	              'container' => 'div',
+	              'container_class'=> 'collapse navbar-collapse',
+	              'container_id'=> 'bs-example-navbar-collapse-1',
+	              'menu_class' => 'navbar-nav mr-auto',
+	              'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+	              'walker' => new wp_bootstrap_navwalker()
+            ));
+            ?>
           </ul>
         </div>
       </div>
