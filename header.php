@@ -35,21 +35,19 @@
           </button>
           <a class="navbar-brand" id="brand" href="#">COREAN GONZALES</a>
         </div>
-        <!--<div class="collapse navbar-collapse" id="myNavbar">-->
+        <div class="collapse navbar-collapse" id="myNavbar">
 
-            <?php wp_nav_menu( array(
-                'menu' => 'main',
-                'theme_location' => 'my_main_menu',
+            <?php
+            wp_nav_menu( array(
+                /*'theme_location' => 'my_main_menu',*/
+                'menu' => 'my_main_menu',
                 'depth'	=> 2, // 1 = no dropdowns, 2 = with dropdowns.
-	              'container' => 'div',
-	              'container_class'=> 'collapse navbar-collapse',
-	              'container_id'=> 'bs-example-navbar-collapse-1',
-	              'menu_class' => 'navbar-nav mr-auto',
-	              'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
-	              'walker' => new wp_bootstrap_navwalker()
-            ));
+	              'container' => false,
+	              'menu_class' => 'nav navbar-nav ml-auto',
+	              'fallback_cb' => 'WP_Bootstrap_NavWalker::fallback',
+                'walker' => new WP_Bootstrap_NavWalker(),
+            ) );
             ?>
-          </ul>
         </div>
       </div>
     </nav>
