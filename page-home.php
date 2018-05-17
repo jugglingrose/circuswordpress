@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div id="landing">
+<div id="landing" style="background: url(<?php echo get_template_directory_uri(); ?>/assets/sixhulahoop.jpg); background-repeat: no-repeat; background-size: cover; " >
     <div class="container-fluid">
         <div class="row titleBox">
           <div class="col-xs-12 col-md-6 noPadding" id="titleA">
@@ -14,7 +14,7 @@
 
 </div>
 
-  <section id="about" onload="test()">
+  <section id="about" class="abouthdr" onload="test()">
     <div class="container-fluid">
       <div class="row flexContain">
         <div  class="col-xs-12 col-md-6 noPadding box">

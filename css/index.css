@@ -32,12 +32,12 @@ p{
 
 @font-face {
 font-family: "Steelfish-online";
-src: url("fonts/steelfish/steelfishrg-webfont.eot");
+src: url("steelfishrg-webfont.eot");
 src:
-url("fonts/steelfish/steelfishrg-webfont.woff") format("woff"),
-url("fonts/steelfish/steelfishrg-webfont.svg") format("svg"),
-url("fonts/steelfish/steelfishrg-webfont.ttf") format("true type"),
-url("fonts/steelfish/steelfishrg-webfont.woff2") format("woff2");
+url("steelfishrg-webfont.woff") format("woff"),
+url("steelfishrg-webfont.svg") format("svg"),
+url("steelfishrg-webfont.ttf") format("true type"),
+url("steelfishrg-webfont.woff2") format("woff2");
 }
 
 @font-face {
@@ -77,9 +77,12 @@ button{
 
 /* remove spacing at bottom */
 nav.navbar.navbar-inverse{
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
+nav{
+  margin-bottom: 20px;
+}
 /*span bars */
 .navbar-inverse .navbar-toggle .icon-bar{
   background-color: #ffffff;
@@ -132,10 +135,7 @@ nav.navbar.navbar-inverse{
 /* LANDING */
 
 #landing{
-  background: url("http://localhost/circuscg/wp-content/themes/circusred/assets/sixhulahoop.jpg");
-  background: no-repeat center;
-  background-size: cover;
-  height: 100vh;
+  /*height: 100vh;*/
 }
 
 span{
@@ -448,7 +448,7 @@ p{
 }
 /*LANDING*/
 
-  #landing{
+  .abouthdr{
     background-position: 13% 96%;
   }
 
@@ -539,7 +539,7 @@ and (min-device-height : 1366px) and (max-device-height : 1366px)
 and (min-width: 1024px) and (max-width: 1024px)
 {
 
-  #landing{
+  .abouthdr{
     background-position: 49% 98% !important;
   }
 
