@@ -46,7 +46,7 @@
         </div>
         <div class="row">
           <div class="col-xs-12 text-center">
-            <button onclick="location.href='../index.html#contact';" type="button" class="btn btn-default">CONTACT</button>
+            <button onclick="location.href='http://localhost/circuscg/home#contact';" type="button" class="btn btn-default">CONTACT</button>
           </div>
         </div>
       </div>

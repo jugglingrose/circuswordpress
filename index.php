@@ -1,11 +1,8 @@
     <?php get_header(); ?>
-    <main>
-      <section id="heroImg">
-      <img src="../assets/fivehoopcrop.jpg" alt="hula hooper">
-    </section>
+    <main >
 
     <!--<section id="menu">-->
-    <section class="blog-area">
+    <section class="middle-area">
         <div class="container">
           <div class="row">
             <div class="blogs col-md-9">
@@ -14,14 +11,9 @@
               if( have_posts() ):
                 //while have_posts
                 while( have_posts() ): the_post();
-             ?>
-             <article>
-               <h2><?php the_title(); ?></h2>
-               <p>Posted in <?php echo get_the_date(); ?></p>
-               <p>Categories: <?php the_category(' '); ?></p>
-               <p><?php the_content(); ?></p>
-             </article>
-             <?php
+
+                get_template_part( 'template-parts/content', get_post_format());
+
            endwhile;
            else:
             ?>

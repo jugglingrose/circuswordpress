@@ -13,11 +13,21 @@ function load_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'load_scripts');
 
-register_nav_menus(
-  array(
-    'my_main_menu' => 'Main Menu',
-  )
-);
+//Main configuration function
+function circusred_config(){
+  //register menus
+  register_nav_menus(
+    array(
+      'my_main_menu' => 'Main Menu',
+    )
+  );
+
+  //Theme Support
+  //Post Thumbnails
+  add_theme_support( 'post-thumbnails');
+  add_theme_support( 'post-formats', array('video', 'image'));
+}
+add_action( 'after_setup_theme', 'circusred_config', 0);
 
 //Remove default editor in dashboard from pages that do not require it
 

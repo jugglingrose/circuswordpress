@@ -1,3 +1,4 @@
+
 /*Red: #cd183b  */
 
 /*------------------------------------------------/
@@ -64,6 +65,10 @@ h2{
   letter-spacing: 1px;
 }
 
+h3{
+  font-size: 24px;
+}
+
 button{
   background-color: #cd183b ;
   color: #ffffff;
@@ -72,6 +77,8 @@ button{
   margin-top: 20px;
 
 }
+
+
 /*-------------------------------------------------------/
 /* NAV BAR */
 
@@ -136,6 +143,7 @@ nav{
 
 #landing{
   /*height: 100vh;*/
+
 }
 
 span{
@@ -158,7 +166,7 @@ span{
 /*------------------------------------------------------------/
 /* ABOUT */
 
-img{
+.aboutImageBlocks{
   width: 100%;
   object-fit: cover;
   height: 100%;
@@ -263,15 +271,11 @@ button.btn.btn-default {
 
 /*------------------------------------------------------------/
 /* services */
-/*#heroImg{
-  background: url("fivehoop.jpg") no-repeat center;
-  background-size: cover;
-  height: 60vh;
-}*/
 
 #heroImg img{
   height: 60vh;
   object-fit: cover;
+  width: 100%;
 }
 
 #menu{
@@ -365,10 +369,41 @@ row:after {
 
 /*------------------------------------------------------------/
 /* BLOG */
-
-aside .sidebar{
-  background-color: red;
+.middle-area{
+  padding: 30px;
 }
+
+.sidebar{
+  background: #000000 ;
+  padding: 20px;
+  margin: 0 0 30px;
+}
+
+.sidebar h2{
+  color: #fff;
+}
+
+.sidebar ul{
+  list-style-type: none;
+}
+
+.cat-item a{
+  color: #fff;
+}
+
+.blog article{
+  display: inline-block;
+  width: 100%;
+}
+
+.wp-post-image{
+  float: left;
+}
+
+.format-image h2 { color: #fff; background: #cd183b; padding: 10px; }
+.format-video h2 { color: #fff; background: #cd183b; padding: 10px; }
+.format-standard h2 { color: #fff ; background: #cd183b; padding: 10px; }
+
 
 /*------------------------------------------------------------/
 /* FOOTER */

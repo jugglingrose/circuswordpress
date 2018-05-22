@@ -1,5 +1,7 @@
+
+<!-- style="background: url(/assets/sixhulahoop.jpg); background-repeat: no-repeat; background-size: cover; -->
 <?php get_header(); ?>
-<div id="landing" style="background: url(<?php echo get_template_directory_uri(); ?>/assets/sixhulahoop.jpg); background-repeat: no-repeat; background-size: cover; " >
+<div id="landing">
     <div class="container-fluid">
         <div class="row titleBox">
           <div class="col-xs-12 col-md-6 noPadding" id="titleA">
@@ -18,7 +20,7 @@
     <div class="container-fluid">
       <div class="row flexContain">
         <div  class="col-xs-12 col-md-6 noPadding box">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/balljugglecrop.jpg" alt="juggling juggler" />
+          <img class="aboutImageBlocks" src="<?php echo get_template_directory_uri(); ?>/assets/balljugglecrop.jpg" alt="juggling juggler" />
         </div>
         <div id="aboutme" class="col-xs-12 col-md-6 text-center nopPadding box">
 
@@ -59,7 +61,7 @@
           <button onclick="location.href='#contact';" type="button" class="btn btn-default">CONTACT</button>
         </div>
         <div class="col-xs-12 col-md-6 noPadding box boxB">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/4hoopcrop.jpg" alt="circus hula hoop"/>
+          <img class="aboutImageBlocks" src="<?php echo get_template_directory_uri(); ?>/assets/4hoopcrop.jpg" alt="circus hula hoop"/>
         </div>
       </div>
     </div>

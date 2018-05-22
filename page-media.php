@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<main>
 <section id="photos">
     <div class="container">
     <div class="row">
@@ -134,4 +135,7 @@
       </div>
     </div>
   </section>
+</main>
+
+
   <?php get_footer(); ?>
