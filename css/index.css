@@ -423,6 +423,11 @@ row:after {
 
 .format-video iframe, .format-video video {width: 100%; max-width: 100%;}
 
+.pagination a{
+  color: #000000;
+  font-size: 24px;
+}
+
 
 /*------------------------------------------------------------/
 /* FOOTER */
