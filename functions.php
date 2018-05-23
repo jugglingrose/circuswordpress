@@ -49,4 +49,10 @@ function circus_sidebars(){
   );
 }
 
+//Customize excerpt word count length for excerpt
+function custom_excerpt_length() {
+  return 50;
+}
+add_filter('excerpt_length', 'custom_excerpt_length');
+
 ?>

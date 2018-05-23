@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-<main>
-<section id="photos">
+<main class="middle-area">
+<section id="photos" >
     <div class="container">
     <div class="row">
       <div class="col-md-4">

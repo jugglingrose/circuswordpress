@@ -33,24 +33,28 @@ p{
 
 @font-face {
 font-family: "Steelfish-online";
-src: url("steelfishrg-webfont.eot");
+src: url("../fonts/steelfishrg-webfont.eot");
 src:
-url("steelfishrg-webfont.woff") format("woff"),
-url("steelfishrg-webfont.svg") format("svg"),
-url("steelfishrg-webfont.ttf") format("true type"),
-url("steelfishrg-webfont.woff2") format("woff2");
+url("../fonts/steelfishrg-webfont.woff") format("woff"),
+url("../fonts/steelfishrg-webfont.svg") format("svg"),
+url("../fonts/steelfishrg-webfont.ttf") format("true type"),
+url("../fonts/steelfishrg-webfont.woff2") format("woff2");
 }
 
 @font-face {
 font-family: "garamond-online";
-src: url("fonts/garamond/ebgaramond-regular-webfont.eot");
+src: url("../fonts/ebgaramond-regular-webfont.eot");
 src:
-url("fonts/garamond/ebgaramond-regular-webfont.woff") format("woff"),
-url("fonts/garamond/ebgaramond-regular-webfont.svg") format("svg"),
-url("fonts/garamond/EBGaramond-Regular.ttf") format("true type");
+url("../fonts/ebgaramond-regular-webfont.woff") format("woff"),
+url("../fonts/ebgaramond-regular-webfont.svg") format("svg"),
+url("../fonts/EBGaramond-Regular.ttf") format("true type");
 }
 
 body{
+  font-family: 'Steelfish-online', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5{
   font-family: 'Steelfish-online', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -75,8 +79,12 @@ button{
   letter-spacing: 1px;
   font-size: 18px;
   margin-top: 20px;
-
 }
+
+.middle-area{
+    margin-top: 80px;
+}
+
 
 
 /*-------------------------------------------------------/
@@ -143,7 +151,9 @@ nav{
 
 #landing{
   /*height: 100vh;*/
-
+  background: url("../assets/sixhulahoop.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
 }
 
 span{
@@ -369,12 +379,8 @@ row:after {
 
 /*------------------------------------------------------------/
 /* BLOG */
-.middle-area{
-  padding: 30px;
-}
-
 .sidebar{
-  background: #000000 ;
+  background: #cd183b ;
   padding: 20px;
   margin: 0 0 30px;
 }
@@ -387,22 +393,35 @@ row:after {
   list-style-type: none;
 }
 
+.sidebar ul a{
+  font-size: 16px;
+  color: #fff;
+  font-family: "garamond-online";
+}
+
 .cat-item a{
   color: #fff;
 }
 
-.blog article{
+.blog-page article{
   display: inline-block;
   width: 100%;
+  border: 6px double #D0D0D0;
+  margin-bottom: 30px;
+  background: #fff;
 }
 
 .wp-post-image{
   float: left;
+  height: auto;
+  width: 100%;
 }
 
-.format-image h2 { color: #fff; background: #cd183b; padding: 10px; }
-.format-video h2 { color: #fff; background: #cd183b; padding: 10px; }
-.format-standard h2 { color: #fff ; background: #cd183b; padding: 10px; }
+.format-image h2 { color: #fff; background: #cd183b; padding: 10px; margin: 0px;}
+.format-video h2 { color: #fff; background: #cd183b; padding: 10px; margin: 0px; }
+.format-standard h2 { color: #fff ; background: #cd183b ; padding: 10px; margin: 0px; }
+
+.format-video iframe, .format-video video {width: 100%; max-width: 100%;}
 
 
 /*------------------------------------------------------------/
@@ -483,7 +502,7 @@ p{
 }
 /*LANDING*/
 
-  .abouthdr{
+  #landing{
     background-position: 13% 96%;
   }
 
@@ -514,7 +533,6 @@ p{
     font-size: 65px;
   }
 
-
   h2{
     font-size: 50px;
   }
@@ -528,7 +546,6 @@ p{
   #aboutme{
     padding-top: 80px;
   }
-
 
   .box{
     width: 50%;
@@ -544,9 +561,7 @@ p{
 
   /*SERVICES*/
   #heroImg img{
-
     height: 70vh;
-
   }
 
   /* MEDIA */
@@ -556,13 +571,9 @@ p{
 
   .close {
     font-size: 35px;
+  }
 
 }
-
-}
-
-
-
 /*-------------------------------------------------------/
 /* IPAD PRO */
 /*@media only screen
@@ -574,7 +585,7 @@ and (min-device-height : 1366px) and (max-device-height : 1366px)
 and (min-width: 1024px) and (max-width: 1024px)
 {
 
-  .abouthdr{
+  #landing{
     background-position: 49% 98% !important;
   }
 
